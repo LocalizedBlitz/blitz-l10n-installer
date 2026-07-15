@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Build LocalizedBlitz Installer NSIS installer and publish to GitHub Release.
+    Build NSIS installer for blitz-l10n-installer and publish to GitHub Release.
 .DESCRIPTION
     Auto-reads version from Cargo.toml, locates NSIS installer, creates GitHub Release.
     After this, GitHub Actions will handle R2 upload and metadata.json update.
@@ -64,7 +64,7 @@ if (-not $SkipBuild) {
     Write-Host "[INFO] Skipping build, using existing installer" -ForegroundColor Yellow
 }
 
-$appName = "LocalizedBlitz Installer"
+$appName = "blitz-l10n-installer"
 $fileName = "${appName}_${appVersion}_x64-setup.exe"
 $nsisPath = "src-tauri\target\release\bundle\nsis\$fileName"
 

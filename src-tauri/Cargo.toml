@@ -1,7 +1,7 @@
 [package]
 name = "blitz-l10n-installer"
 version = "0.1.0"
-description = "LocalizedBlitz Installer — Tanks Blitz localization made easy."
+description = "blitz-l10n-installer — Tanks Blitz localization made easy."
 authors = ["LocalizedBlitz"]
 edition = "2021"
 license = "AGPL-3.0-only"
