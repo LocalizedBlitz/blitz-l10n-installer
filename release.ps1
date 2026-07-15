@@ -1,4 +1,4 @@
-#>
+<#
 .SYNOPSIS
     Build LocalizedBlitz Installer NSIS installer and publish to GitHub Release.
 .DESCRIPTION
