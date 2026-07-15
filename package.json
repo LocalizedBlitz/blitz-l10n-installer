@@ -1,0 +1,35 @@
+{
+  "name": "blitz-l10n-installer",
+  "version": "0.1.0",
+  "description": "LocalizedBlitz Installer — Tanks Blitz localization made easy.",
+  "type": "module",
+  "scripts": {
+    "sync-version": "node scripts/sync-version.js",
+    "prebuild": "npm run sync-version",
+    "predev": "npm run sync-version",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "tauri": "tauri"
+  },
+  "license": "AGPL-3.0-only",
+  "dependencies": {
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-dialog": "^2.7.1",
+    "@tauri-apps/plugin-opener": "^2"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.6",
+    "@sveltejs/kit": "^2.9.0",
+    "@sveltejs/vite-plugin-svelte": "^5.0.0",
+    "@tailwindcss/vite": "^4.3.0",
+    "@tauri-apps/cli": "^2.11.4",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "tailwindcss": "^4.3.0",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.3"
+  }
+}
