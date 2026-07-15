@@ -17,7 +17,7 @@ struct UpdateInfo {
 }
 
 // TODO: Update to Gitee raw URL once repo is mirrored
-const LBI_METADATA_URL: &str = "https://gitee.com/localizedblitz/blitz-l10n-installer/raw/master/metadata.json";
+const LBI_METADATA_URL: &str = "https://gitee.com/localizedblitz/blitz-l10n-installer/raw/main/metadata.json";
 
 // ── Instance detection ──
 
