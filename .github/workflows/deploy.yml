@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          ref: master
+          ref: main
 
       - name: Download NSIS installer from Release
         shell: bash
@@ -62,5 +62,5 @@ jobs:
           git add metadata.json
           git diff --cached --quiet || {
             git commit -m "chore: update metadata.json to ${GITHUB_REF_NAME} [skip ci]"
-            git push origin HEAD:master
+            git push origin HEAD:main
           }
