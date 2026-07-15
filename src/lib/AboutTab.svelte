@@ -36,9 +36,9 @@
     checkingUpdate = true;
     try {
       updateInfo = await invoke<{ version: string; path: string } | null>('check_lbi_update');
-    } catch {
+    } catch (e: any) {
       updateInfo = null;
-      showToast(t('error.update_check_failed'), 'error');
+      showToast(typeof e === 'string' ? e : t('error.update_check_failed'), 'error');
     }
     checkingUpdate = false;
   }
