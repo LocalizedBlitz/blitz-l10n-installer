@@ -27,6 +27,9 @@
     "active": true,
     "targets": ["nsis", "msi"],
     "windows": {
+      "certificateThumbprint": "7FE8AFF847599C7AAB05313A22482124FCFB5593",
+      "digestAlgorithm": "sha256",
+      "timestampUrl": "http://timestamp.digicert.com",
       "nsis": {
         "languages": ["English", "SimpChinese", "Russian"]
       }
